@@ -302,7 +302,7 @@ $("sharehint").textContent = COPY.share_on;
 function route(r) {
   if (r.f[0] || r.f[1]) return ["bad", "Held for a person", "Flagged, so it is not saved and goes to the Founder's Associate to review."];
   if (r.s[2] < 2) return ["warn", "Asked the giver for more", "Not saved yet. The giver gets one friendly question."];
-  if (r.v[1] < 0.7 || r.t[1] < 0.7) return ["warn", "Giver confirms the tag", "The prototype asks the giver to confirm the value. The reply step is not wired up yet, so it would be saved once they do."];
+  if (r.v[1] < 0.7 || r.t[1] < 0.7) return ["warn", "Giver confirms the tag", "Slack shows buttons: the AI's guess plus the other values. The giver picks one and the spot is saved with that value."];
   return ["ok", "Saved", "Specific and clear, so it is saved with its tags."];
 }
 const bar = (p) => `<div class="bar"><i style="width:${Math.round(p * 100)}%"></i></div>`;

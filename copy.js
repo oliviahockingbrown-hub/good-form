@@ -10,7 +10,7 @@ const COPY = {
 
   hero_eyebrow: `Working prototype`,
   hero_title: `Spot good work every day. Celebrate it every week. Connect it to results every month.`,
-  hero_lead: `Anyone can spot anyone for something specific they did and what it made possible. AI checks the spot is specific and tags it to a value. It never writes the praise. Everything on this page is a real result from the n8n build I made for this task.`,
+  hero_lead: `Anyone can spot anyone for something specific they did and what it made possible. AI checks the spot is specific and tags it to a value. It never writes the praise. Everything on this page is a real output from the n8n build I made for this task, run on fictional test data.`,
 
   /* The five rhythm buttons: [button label, one-line reason] */
   rhythm_hint: `Tap a rhythm to see why it is there.`,
@@ -95,7 +95,7 @@ const COPY = {
   ],
   notclaim_title: `What I am not claiming`,
   notclaim: [
-    `The AI agrees with me on the exact value 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the unseen spots it chose Strong analytical judgement, so it leans that way when a spot mentions numbers. So it suggests a value and asks the giver to confirm. In my prototype the question is asked in Slack, but the reply that confirms it is not built yet.`,
+    `The AI agrees with me on the exact value 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the unseen spots it chose Strong analytical judgement, so it leans that way when a spot mentions numbers. So it suggests a value and the giver confirms it with one tap in Slack. The WhatsApp version asks the question but the tap-to-confirm step is Slack only for now.`,
     `I tuned v2 on the same 30 spots, so those scores are flattered. The 50 unseen spots are the fair test, and their expected answers come from test labels, not a hand key.`,
     `The name-swap check came out at flags 30 of 30, route 28 of 30, value 22 of 30. It is a small sample with no control run, so a sanity check and not a bias audit.`
   ],
@@ -105,7 +105,7 @@ const COPY = {
   guard: [
     `AI never writes, rewrites or improves praise. It asks the giver one question, in a trainer's voice.`,
     `Only spots people deliberately submit. No scraping of chats.`,
-    `Below 0.7 confidence the AI asks the giver to confirm the tag (the prototype asks, the confirm step is not built yet). Rude, sarcastic or ranking language goes to a person.`,
+    `Below 0.7 confidence the AI asks the giver to confirm the tag with one tap (built in Slack, not yet in WhatsApp). Rude, sarcastic or ranking language goes to a person.`,
     `Anonymous is an option. Named is the default, and the Founder's Associate can see the real giver for moderation only.`,
     `No cash, prizes, points or leaderboards. Recognition data never becomes performance data.`
   ],
