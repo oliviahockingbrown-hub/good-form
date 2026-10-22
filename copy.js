@@ -61,10 +61,10 @@ const COPY = {
   rep_pick_title: `How the Rep Count is chosen`,
   rep_pick: [
     [`The pool`, `Last week's saved spots that scored 2 out of 2 on specificity, were not held for review, and whose recipient has not opted out.`],
-    [`Fair rotation`, `Nobody appears twice within eight weeks. People who have not appeared this quarter come first, then whoever appeared longest ago. Ties are broken at random so nobody is favoured.`],
+    [`Fair rotation`, `People featured least often come first, across every stage. Then whoever was featured longest ago. Ties are broken at random so nobody is favoured. Nobody is picked twice in a row, and each spot is used once.`],
     [`Spread`, `No more than one spot per team, a mix of Office and Remote colleagues, and at least one Ground Crew or Hard Rep spot every week.`],
     [`Focus Value`, `At least one spot shows the week's Focus Value.`],
-    [`The pick is automatic`, `The workflow ranks the pool by these rules, fills the week's slots and posts the card. No person chooses who appears. Every pick is logged with the rule that selected it, so anyone can audit it. The only AI in the card is a short intro line. The praise is always the giver's own words.`]
+    [`The pick is automatic`, `The workflow ranks the pool by these rules, fills the week's slots and drafts the card. No person chooses who appears, but a person reads every line before it posts. Every pick is logged with the rule that selected it, so anyone can audit it. The only AI in the card is a short intro line. The praise is always the giver's own words.`]
   ],
   rep_why: `The Rep Count is a weekly highlight, so it does not try to be equal. Equal is exact in the Good Form Book instead, where every person gets one page with the same number of spots. Meanwhile every spot is delivered privately to the person it is about, and the Progress Report collects them each quarter. At about seven features a week, a team of 100 would feature each person roughly three to four times a year (assumption).`,
 
@@ -145,7 +145,7 @@ const COPY = {
   notclaim: [
     `The AI picks the same value as the hand key only 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the held-out spots it chose Strong analytical judgement, so it leans that way when a spot mentions numbers. This is why it only suggests a value and the giver confirms it.`,
     `Prompt v2 was tuned on the same 30 keyed spots, so those scores are flattered. The held-out 50 is the fair test.`,
-    `The name-swap check came out at flags 30 of 30, route 28 of 30, value 22 of 30. It is a small sample with no control run, so a sanity check and not a bias audit.`,
+    `A name-swap check with a control run changed the value tag on 9 of 30 spots when names were swapped, against 0 of 30 when the same text was run twice. Safety flags never moved. The changes went in no consistent direction, but value tagging is name-sensitive, which is why the giver confirms the value. It is a small sample, so a signal and not a verdict.`,
     `All data is fictional.`
   ],
 
@@ -187,5 +187,5 @@ const COPY = {
   ],
   how_note: `All data here is fictional test data. The assumptions, sources, prompts and tests behind this page are in the Workings Pack that came with it.`,
 
-  footer: `Prototype for evaluation. Built by Liv with Claude for the MAGIC AI Founder's Associate task, October 2026. Not an official MAGIC page and it does not use MAGIC's logo.`
+  footer: `Prototype for evaluation. Built by Liv with Claude for the MAGIC AI Founder's Associate task, October 2026. Not an official MAGIC page and it does not use MAGIC's logo. Photos are free-licence stock from Pexels and Unsplash contributors.`
 };
