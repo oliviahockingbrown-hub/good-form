@@ -11,22 +11,22 @@ const COPY = {
 
   hero_eyebrow: `Working prototype`,
   hero_title: `Spot good work every day. Celebrate it every week. Connect it to results every month.`,
-  hero_lead: `Anyone on the team can spot a colleague for something specific they did and what it helped make possible. AI checks the spot is specific and tags it to a company value. It never writes the praise. Everything on this page is a real output from the build made for this task, run on fictional test data.`,
+  hero_lead: `Anyone on the team can spot a colleague for something specific they did and what it helped make possible. AI checks the spot is specific and tags it to a company value. It never writes the praise! Everything on this page is a real output from the build made for this task, run on fictional test data.`,
 
   /* The five rhythm steps: [short label, title, description, status] */
   rhythm_title: `The Rhythm`,
   rhythm: [
-    [`Any day`, `A spot`, `Anyone can spot a colleague in about 30 seconds, in Slack or WhatsApp, so recognition happens when the work does and not at the end of the quarter.`, `Built`],
-    [`Weekly`, `The Rep Count`, `A weekly card of highlights, chosen automatically by simple fairness rules, with every pick logged. Every spot also goes straight to the person it is about, so the card celebrates a selection and nobody depends on it to be seen.`, `Built`],
-    [`Monday`, `Varun's Monday Two`, `Two spots a week reach the CEO, so he can respond to specific work in about five minutes. The whole team also gets the week's Focus Value.`, `Designed`],
-    [`Quarterly`, `Your Progress Report`, `Each person securely and privately receives every spot they were given, grouped by value, with no totals and no rankings.`, `Built`],
-    [`Yearly`, `The Good Form Book`, `One company Book, with a copy for everyone. It has one page per person, and every page holds the same number of spots, two (assumption), so everyone is represented equally. The two are chosen automatically from the spots that person received, from different parts of the year where possible, with ties broken at random. A recipient can opt a spot out. A check at month 10 finds anyone with fewer than two, and the team has two months to spot them, truthfully. Copies are handed out at the company anniversary.`, `Designed`]
+    [`Any day`, `A spot`, `Anyone can spot a colleague in about 30 seconds, in Slack or WhatsApp, so recognition happens when the work does and not at the end of the quarter! Every Thursday, anyone who has not yet spotted anyone that week gets a friendly automatic reminder.`, `Built`],
+    [`Weekly`, `The Rep Count`, `A weekly card of highlights, chosen automatically by simple fairness rules, with every pick logged. Every spot also goes straight to the person it is about, who is asked privately whether they would like it kept between us or shared with the team, so the card celebrates a selection and nobody depends on it to be seen. Every Monday morning the whole team is also notified in Slack of that week's Focus Value! The Founder's Associate (assumption) needs about 30 minutes a week for all of this in month one, then 20 to 25.`, `Built`],
+    [`Monday`, `Varun's Monday Two`, `Two spots a week reach the CEO, so he can respond to specific work in about five minutes! He gets a Thursday reminder if he has not replied yet, and a monthly report of who he has acknowledged and who is still waiting.`, `Built`],
+    [`Quarterly`, `Your Progress Report`, `Every quarter, each person securely and privately receives every spot they were given, grouped by value, with no totals and no rankings!`, `Built`],
+    [`Yearly`, `The Good Form Book`, `One company Book, with a copy for everyone. It has one page per person, and every page holds the same number of spots, so everyone is represented equally. Four spots per person (assumption), one from each quarter. They are chosen automatically from the spots that person received and said yes to sharing, with ties broken at random. A recipient can opt a spot out. A check at month 10 finds anyone with fewer than four, and the team has two months to spot them, truthfully. Copies are handed out at the company anniversary!`, `Designed`]
   ],
 
   routes_title: `Choose Your Route`,
   routes: [
-    [`2 minutes`, `Try it`, `Pick an example and watch what Form Check says.`, `spot`, `Open Spot Check`],
-    [`10 minutes`, `Trust it`, `See the results, what changed along the way and what is not claimed.`, `proof`, `Open the Proof Sheet`],
+    [`2 minutes`, `Try it`, `Pick an example and watch what Form Check says!`, `spot`, `Open Spot Check`],
+    [`10 minutes`, `Trust it`, `See the results, what changed along the way and what is not claimed!`, `proof`, `Open the Proof Sheet`],
     [`30 minutes`, `Check it`, `See how it is built and tested. The Workings Pack that came with this page holds every assumption, source, prompt and test.`, `build`, `Open How It Is Built`]
   ],
 
@@ -34,11 +34,11 @@ const COPY = {
   spot_title: `Spot Check`,
   spot_sub: `These are real results, recorded on 21 October 2026 from the build (prompt v2, Claude Haiku 5.5). Pick an example to see what Form Check says. The team is fictional.`,
   share_label: `Share my name with the recipient`,
-  share_on: `Name shown on the spot. Untick it to see what the recipient sees instead. The Founder's Associate can always see the real giver, so anything inappropriate can be dealt with.`,
-  share_off: `The recipient will see this as from A teammate. The Founder's Associate can still see the real giver, for moderation only.`,
+  share_on: `Name shown on the spot. Untick it to see what the recipient sees instead. The Founder's Associate (assumption) can always see the real giver, so anything inappropriate can be dealt with.`,
+  share_off: `The recipient will see this as from A teammate. The Founder's Associate (assumption) can still see the real giver, for moderation only.`,
 
   wa_title: `Slack Or WhatsApp`,
-  wa_sub: `Same spot, same rules, same Form Check, different door. A lot of the team will live in WhatsApp, and it is where this whole challenge began, with a message from the CEO on a Sunday evening.`,
+  wa_sub: `Same spot, same rules, same Form Check, different door! A lot of the team will live in WhatsApp, and it is where this whole challenge began, with a message from the CEO on a Sunday evening.`,
   wa_status: `Status: tested end to end on a real phone through Twilio's WhatsApp sandbox. The message arrived, was checked by Form Check and was saved. The replies shown here are what the workflow generated. Twilio's free trial cannot deliver replies back, so a live two-way setup needs a paid WhatsApp Business account.`,
   wa_notes: [
     `To spot someone, send: spot Olu: what they did and what it made possible.`,
@@ -54,43 +54,43 @@ const COPY = {
 
   /* ---------- The Week tab ---------- */
   week_title: `What Happens After A Spot`,
-  week_sub: `A saved spot goes straight to the person it is about. It also feeds the weekly Rep Count and a simple coverage check, so nobody goes unseen.`,
+  week_sub: `A saved spot goes straight to the person it is about. It also feeds the weekly Rep Count and a simple coverage check, so nobody goes unseen!`,
 
   rep_label: `The weekly Rep Count`,
-  rep_text: `A card in the style of the mirror's post-workout summary. It features a handful of spots, not every person. At 100 people that is about six to eight spots a week (assumption). The praise is always the giver's exact words, and a spot sent anonymously stays anonymous. This card was drafted by the Rep Count workflow from the fictional test spots.`,
+  rep_text: `A card in the style of the MAGIC mirror's post-workout summary. It features a handful of spots, not every person. At 100 people that is about six to eight spots a week (assumption). The praise is always the giver's exact words, and a spot sent anonymously stays anonymous. This card was drafted by the Rep Count workflow from the fictional test spots.`,
   rep_pick_title: `How the Rep Count is chosen`,
   rep_pick: [
-    [`The pool`, `Last week's saved spots that scored 2 out of 2 on specificity, were not held for review, and whose recipient has not opted out.`],
-    [`Fair rotation`, `People featured least often come first, across every stage. Then whoever was featured longest ago. Ties are broken at random so nobody is favoured. Nobody is picked twice in a row, and each spot is used once.`],
+    [`The pool`, `Last week's saved spots that scored 2 out of 2 on specificity, were not held for review, and whose recipient has said yes to it being shared. Spots are private by default. Each recipient is asked when the spot arrives: keep this between us, or happy for it to be shared with the team? (Built and tested in Slack.)`],
+    [`Fair rotation`, `Whoever has been featured least often comes first, counting every place they have appeared: the Rep Count, the Monday Two and company milestone cards. If two people are level, whoever appeared longest ago goes first. Any remaining ties are broken at random, so nobody is favoured. Nobody appears two weeks in a row, and each spot is used only once.`],
     [`Spread`, `No more than one spot per team, a mix of Office and Remote colleagues, and at least one Ground Crew or Hard Rep spot every week.`],
     [`Focus Value`, `At least one spot shows the week's Focus Value.`],
-    [`The pick is automatic`, `The workflow ranks the pool by these rules, fills the week's slots and drafts the card. No person chooses who appears, but a person reads every line before it posts. Every pick is logged with the rule that selected it, so anyone can audit it. The only AI in the card is a short intro line. The praise is always the giver's own words.`]
+    [`The pick is automatic`, `The workflow ranks the pool by these rules, fills the week's slots and drafts the card. No person chooses who appears, but a person reads every line before it posts. Every pick is logged with the rule that selected it, so anyone can audit it. The only AI in the card is a short intro line, drafted fresh each week. To keep it from repeating, the prompt is shown the last six intros and told to avoid them (built, and tested over two runs). The praise is always the giver's own words.`]
   ],
   rep_why: `The Rep Count is a weekly highlight, so it does not try to be equal. Equal is exact in the Good Form Book instead, where every person gets one page with the same number of spots. Meanwhile every spot is delivered privately to the person it is about, and the Progress Report collects them each quarter. At about seven features a week, a team of 100 would feature each person roughly three to four times a year (assumption).`,
 
   focus_label: `The Focus Value of the week`,
-  focus_text: `Every Monday morning an automatic message goes to the whole team: this week's Focus Value, what it looks like in practice, and one real spot that shows it. The five values rotate, so each one gets a week in turn, and the Rep Count closes with a strip showing what that value drew. No AI is needed, only a schedule.`,
-  focus_status: `Designed`,
+  focus_text: `Every Monday morning an automatic message goes to the whole team: this week's Focus Value, what it looks like in practice, and one real spot that shows it. The five values rotate, so each one gets a week in turn, and the Rep Count closes with a strip showing what that value drew. No AI is needed, only a schedule. The message also ends with a link: know about a company win? Tell us here.`,
+  focus_status: `Built`,
 
   cov_label: `The coverage check: who has been seen?`,
-  cov_text: `It counts how many people have been named in a spot in the last 14 days, split by team and by Office and Remote. The goal is for recognition to reach everyone, not only the loudest or the people closest to the founder.`,
+  cov_text: `It counts how many people have been named in a spot in the last 14 days, split by team and by Office and Remote. The goal is for recognition to reach everyone, not only the loudest or the people closest to the founder. It also checks that at least 30% of saved spots over the last 28 days cross a team line (assumption). If that falls below the floor, the Thursday nudge asks people to look beyond their own team, so recognition does not stay inside the same small groups!`,
   cov_ai: `AI is not used here, by design. Coverage has to be exact and easy to audit, and a count is something plain code does perfectly. Leaving AI out also means nobody has to wonder whether a model has misjudged who has been seen.`,
   nudge_title: `The manager nudge`,
-  nudge_text: `When no spots have arrived for someone in 14 days, their manager gets a private message. The purpose is simple: nobody gets left out. The manager sees only who has not been spotted and never what any spot says, and the person is never told a nudge was sent.`,
+  nudge_text: `When no spots have arrived for someone in 14 days, their manager gets a private message. The purpose is simple: nobody gets left out! The manager sees only who has not been spotted and never what any spot says, and the person is never told a nudge was sent.`,
   nudge_steps_title: `What the manager does next`,
   nudge_steps: [
     [`Day 15`, `The nudge arrives. The manager thinks about what that person did lately and who relied on them. They spot the person themselves or ask a colleague who worked with them. A spot has to be true, so nobody is asked to invent one.`],
     [`Day 22`, `If nothing has arrived, a reminder comes with a prompt for work that is easy to miss: who is relying on this person without ever seeing it?`],
-    [`Day 29`, `The Founder's Associate has a short conversation with the manager, not the person. Is something getting in the way of recognition reaching them, such as being new, remote or working behind the scenes? The counts go into the monthly review.`]
+    [`Day 29`, `The Founder's Associate (assumption) has a short conversation with the manager, not the person. Is something getting in the way of recognition reaching them, such as being new, remote or working behind the scenes? The counts go into the monthly review.`]
   ],
   nudge_status: `Nudge text Built, sending Designed`,
 
   /* ---------- Monday Two tab ---------- */
   monday_title: `Varun's Monday Two`,
-  monday_sub: `Five minutes a week. Two real spots, and one small thing to do about them. A CEO's attention carries real weight with a team, so it is spent on specific work and not on admin.`,
+  monday_sub: `Five minutes a week! Two real spots, and a quick way to celebrate the people behind them. As the company grows, the number of spots can grow with it (assumption). A CEO's attention carries real weight with a team, so it is spent on specific work and not on admin.`,
   monday_pick_title: `How the two are chosen`,
   monday_pick: [
-    `The pool is last week's saved spots that scored 2 out of 2 on specificity, were not sent anonymously, and whose recipient has not opted out of being featured. Anonymous spots are never used, so nobody can be traced.`,
+    `The pool is last week's saved spots that scored 2 out of 2 on specificity, were not sent anonymously, and whose recipient has said yes to being featured. Spots are private by default, so nothing is featured until the recipient agrees. The pool starts smaller, which is why the launch email explains the question and the Thursday reminder encourages answers. Anonymous spots are never used, so nobody can be traced.`,
     `Anyone who was a Monday Two in the last four weeks is left out, and so are two people from the same team in the same week.`,
     `One spot shows the week's Focus Value. The other is Ground Crew or Hard Rep work, or comes from a different team or a remote colleague.`,
     `The rest is ranked with the same fairness order as the Rep Count (people not yet featured first, ties broken at random) and the top two that fit every rule are chosen automatically. No person picks them.`,
@@ -101,7 +101,9 @@ const COPY = {
     `Read both and pick the one he has a connection to or can relate to.`,
     `Reply to that person the same day, in his own words, naming the specific thing they did. One or two lines in the thread, or a two minute chat.`,
     `Keep it about the work. No rewards, no comparing, nothing that sounds like a performance review.`,
-    `Optional: say it out loud at the Monday catch-up so the rest of the team hears it.`
+    `Optional: say it out loud at the Monday catch-up so the rest of the team hears it.`,
+    `If he has not replied by Thursday, an automatic private reminder nudges him, once.`,
+    `Each month he gets a short report: who he has acknowledged, and who has not been featured or acknowledged yet (built, tested on fictional data).`
   ],
   delivery_title: `How the Monday Two reaches him`,
   delivery_sub: `Three options. All of them are built on the same scheduled workflow, so the choice is only about where the message lands.`,
@@ -110,18 +112,25 @@ const COPY = {
     [`WhatsApp`, `If he prefers it`, `The same message through the WhatsApp Business Platform. It needs the setup described under Slack Or WhatsApp, so allow up to two weeks for approval (assumption). One template message a week is about 52 a year, a few pounds at most.`],
     [`Email`, `Fallback`, `Works anywhere with no approvals, and is the easiest message to miss on a busy Monday.`]
   ],
-  delivery_note: `Suggested path: start on Slack in week 1, apply for WhatsApp at the same time, and move across once it is approved if he prefers it. He replies straight to the person, so there is nothing for him to log. The Founder's Associate can see whether each Monday Two got a reply.`,
-  monday_status: `Designed`,
+  delivery_note: `Suggested path: start on Slack in week 1, apply for WhatsApp at the same time, and move across once it is approved if he prefers it. He replies straight to the person, and a reply button on the message records that he has. That log matters: Good Form takes it into account when choosing the next Monday Two, so the same people are not acknowledged over and over and nobody is missed. The Founder's Associate (assumption) can see whether each Monday Two got a reply.`,
+  monday_status: `Built`,
 
   /* ---------- Fits In tab ---------- */
   rituals_title: `Plugs Into What MAGIC Already Does`,
-  rituals_sub: `Good Form is not a new thing to remember. It hooks into rituals the team already has. Details marked as assumptions need checking on day one.`,
+  rituals_sub: `Good Form is not a new thing to remember! It hooks into rituals the team already has. Details marked as assumptions need checking on day one.`,
+  rituals_adds: [
+    [`Every week`, `The whole team`, `The Rep Count lands that week, so lunch has real wins to talk about!`, `lunch`],
+    [`Every quarter`, `The whole company, in the room`, `Progress Reports go out the week before, then a Ground Crew Round opens the day!`, `huddle`],
+    [`As they happen`, `Whoever the news is about`, `Claude picks which spots helped lead to it, and code pastes in their exact words!`, `cheer`],
+    [`Days 1 to 14`, `The new joiner and their buddy`, `A day-10 reminder asks the buddy to spot something from the first fortnight!`, `highfive`],
+    [`Any time`, `Anyone with a phone`, `Spot it in 30 seconds. The Rep Count repeats it to the whole team!`, `social`]
+  ],
   rituals: [
-    [`Lunch Club`, `Weekly`, `Lunch Club carries on exactly as it is. The weekly Rep Count simply gives people real wins to talk about when they sit down together.`, `Designed`],
-    [`Quarterly off-sites`, `Quarterly`, `This is different from the weekly card because it is live and it crosses teams. Everyone gets their Progress Report the week before. The off-site then opens with a Ground Crew Round: one spot per team, each about work done by someone from another team, chosen from the quarter's Ground Crew and Hard Rep spots that crossed team lines. The Founder's Associate asks each recipient beforehand, and the giver reads their own spot aloud if they want to.`, `Designed`],
-    [`Company milestones`, `As they happen`, `When a milestone lands, such as a launch, a funding round or a customer review score, the Team PB step matches the spots from the weeks before it and builds a card. The milestone sits at the top and the chain of spots behind it sits underneath, in people's own words, crediting the work nobody saw. A person can paste in customer evidence, such as a five-star review, and it is matched to the spots that came before it.`, `Built, needs milestone data to test`],
-    [`New joiners`, `First fortnight`, `Assumption: every new joiner has a buddy. If not, their manager names one. On day 10 Good Form reminds the buddy to spot the new joiner for something from their first fortnight, so their first experience of the company is being noticed. If there is still no spot by day 14, the coverage nudge goes to their manager.`, `Designed`],
-    [`Run Club, socials and the coffee machine`, `In person`, `Spots happen away from screens too. Something said at the coffee machine or on a run takes 30 seconds to type, and the Rep Count makes sure it gets repeated.`, `Designed`]
+    [`Lunch Club`, `Weekly`, `Weekly, informal and small. Nothing about Lunch Club changes. The Rep Count simply lands that week, so people sit down with real, specific wins to talk about, and recognition spreads by word of mouth!`, `Designed`],
+    [`Quarterly off-sites`, `Quarterly`, `Quarterly, whole company and in the room, so it does a different job from Lunch Club. Everyone gets their Progress Report the week before. The off-site then opens with a Ground Crew Round: one spot per team, each about work done by someone from another team, chosen from the quarter's Ground Crew and Hard Rep spots that crossed team lines. The Founder's Associate (assumption) asks each recipient beforehand, and the giver reads their own spot aloud only if they want to. Lunch Club is a weekly chat about this week's wins. The off-site is a quarterly moment, face to face, for recognising work that crossed teams.`, `Designed`],
+    [`Company milestones`, `As they happen`, `When a milestone lands, such as a launch, a funding round or a customer review score, anyone on the team can flag it, any time, through a short web form: what happened, when, one optional line of evidence such as a five-star review pasted in as text, and an optional name. Every Friday at 10:00 the Founder's Associate (assumption) gets a nudge with a button to the same form, and the Monday Focus Value message ends with a link to it too, so nobody depends on one person noticing. Nothing is scraped. Good Form then reads the public, specific spots from the weeks before and asks Claude which of them helped lead to it. Claude only picks which spots belong. Code pastes in their exact words, so nothing is rewritten. The card puts the milestone at the top and the chain of spots underneath, crediting the work nobody saw. A spot already shown in a Rep Count is not reposted. Its person is credited by name with a one-line reference instead. A person reads the card before it goes out.`, `Built, needs real milestone data to test`],
+    [`New joiners`, `First fortnight`, `Assumption: every new joiner has a buddy. If not, their manager names one. On day 10 Good Form reminds the buddy to spot the new joiner for something from their first fortnight, so their first experience of the company is being noticed! If there is still no spot by day 14, the coverage nudge goes to their manager.`, `Designed`],
+    [`Run Club, socials and the coffee machine`, `In person`, `Spots happen away from screens too. Something said at the coffee machine or on a run takes 30 seconds to type, from a phone, in Slack or WhatsApp, in a sentence or two. No form and no login. The moment passes but the spot does not, and the Rep Count makes sure it gets repeated to the whole team!`, `Designed`]
   ],
 
   /* ---------- Proof tab ---------- */
@@ -143,7 +152,7 @@ const COPY = {
   ],
   notclaim_title: `What is not claimed`,
   notclaim: [
-    `The AI picks the same value as the hand key only 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the held-out spots it chose Strong analytical judgement, so it leans that way when a spot mentions numbers. This is why it only suggests a value and the giver confirms it.`,
+    `The AI picks the same value as the hand key only 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the held-out spots it chose "Strong analytical judgement", so it leans that way when a spot mentions numbers. This is why it only suggests a value and the giver confirms it.`,
     `Prompt v2 was tuned on the same 30 keyed spots, so those scores are flattered. The held-out 50 is the fair test.`,
     `A name-swap check with a control run changed the value tag on 9 of 30 spots when names were swapped, against 0 of 30 when the same text was run twice. Safety flags never moved. The changes went in no consistent direction, but value tagging is name-sensitive, which is why the giver confirms the value. It is a small sample, so a signal and not a verdict.`,
     `All data is fictional.`
@@ -155,19 +164,20 @@ const COPY = {
   guard: [
     `AI never writes, rewrites or improves praise. It asks the giver one question, in a trainer's voice.`,
     `Only spots people deliberately submit. No scraping of chats.`,
-    `Below 0.7 confidence the AI asks the giver to confirm the value with one tap. Rude, sarcastic or ranking language goes to a person.`,
-    `Anonymous is an option and named is the default. The Founder's Associate can see the real giver, for moderation only.`,
+    `Private by default. A spot is only featured in the Rep Count, the Monday Two, the Good Form Book or Team PB once the person it is about says yes. Until then it stays private to them and still appears in their quarterly Progress Report.`,
+    `Below 0.7 confidence the AI asks the giver to confirm the value with one tap. Rude, sarcastic or ranking language goes to the Founder's Associate (assumption) to read first.`,
+    `Anonymous is an option and named is the default. The Founder's Associate (assumption) can see the real giver, for moderation only.`,
     `No cash, prizes, points or leaderboards. Recognition data never becomes performance data.`,
-    `The company values sit in one settings table, so changing them means editing five rows.`
+    `The five company values used to tag spots live in one settings table. If MAGIC's values change, someone edits those five rows and nothing else in the build changes.`
   ],
   test_title: `Kept honest: regular testing and breaking`,
   test_sub: `A recognition system that checks itself is only trustworthy if somebody keeps trying to break it. Pass marks are assumptions to adjust.`,
   test: [
     [`After any change`, `The 30 keyed spots and the red team set are rerun. If anything gets worse, the change is rolled back.`],
-    [`Every week`, `The Founder's Associate reads every held spot and a sample of ten saved ones. Target: zero unsafe saves.`],
+    [`Every week`, `The Founder's Associate (assumption) reads every held spot and a sample of ten saved ones. Target: zero unsafe saves. If a held spot is inappropriate, they take it to the CEO to agree how to handle it. The person it was about is not told.`],
     [`Every month`, `A red team run of 16 fixed spots plus new nasty ones from real near-misses.`],
-    [`Every quarter`, `A name-swap bias check with a control run, and a fresh sample of values scored by a person.`],
-    [`When the model changes`, `Everything above is rerun before switching. If it is not as good, stay on the old model.`]
+    [`Every quarter`, `A name-swap bias check with a control run, and a fresh sample of values scored by the Founder's Associate (assumption).`],
+    [`When the model changes`, `Models get replaced over time. Nothing changes on the day a new one arrives. First the same 30 keyed spots and the red team set are run on it, which takes under an hour (assumption) and costs a few cents. If it does worse on any safety check, Good Form stays on the current model. If it is at least as good, the switch happens on a quiet day, and the old model stays available to switch back to until the first weekly check has passed.`]
   ],
   redteam_title: `The first red team run`,
   redteam_text: `Sixteen awkward spots: spam, a joke, a backhanded compliment, an appearance comment, injection in French, a request to print the system prompt, and text built to break the output. Fifteen behaved as expected. One gap was found (ranking people was not held for a person) and fixed.`,
@@ -178,14 +188,21 @@ const COPY = {
     [`Spot in WhatsApp`, `Built`, `Inbound tested from a real phone. Replies need a paid account`],
     [`Form Check`, `Built`, `Specificity, value, type, safety flags`],
     [`Rep Count draft`, `Built`, `AI writes the intro only. The praise is pasted in by code`],
-    [`Rep Count selection rules`, `Designed`, `Automatic fair rotation and spread, described above`],
+    [`Varied Rep Count intro`, `Built`, `Drafted fresh each week. The prompt is shown the last six intros and told to avoid them. Tested over two runs`],
+    [`Rep Count selection rules`, `Built`, `Fair rotation and spread, tested over four simulated weeks with zero rule breaks`],
     [`Coverage check`, `Built`, `Plain counting, no AI`],
+    [`Cross-team check`, `Built`, `Tested with invented spots below the 30% floor. The Thursday wording switched to ask for cross-team spots`],
     [`Manager nudge`, `Built`, `Text built. Sending and the follow-up steps are designed`],
-    [`Monday Two and Focus Value message`, `Designed`, `A scheduled workflow`],
+    [`Thursday reminder to people who have not spotted yet`, `Built`, `Tested live in Slack, with a button that shows how to spot`],
+    [`Monday Two message`, `Built`, `Sent to a test user in Slack, with a reply button that logs the reply`],
+    [`Monthly report to Varun`, `Built`, `Who he acknowledged and who has not been featured. Dry run on fictional data`],
+    [`Focus Value message every Monday`, `Built`, `Sent to a test user in Slack, with one real shared spot. Private spots are never quoted`],
+    [`Question to each recipient: private or shared with the team?`, `Built`, `Sent to a test user in Slack when a spot is saved. Both buttons tested. No answer means private`],
+    [`Thursday reminder to Varun if he has not replied`, `Built`, `Sent to a test user in Slack, only when no reply is logged that week`],
     [`Progress Report, Day-30 report, Team PB`, `Built`, `Run on fictional data. Team PB needs milestone data to test`],
     [`The Good Form Book`, `Designed`, `One company Book, printed once a year`]
   ],
-  how_note: `All data here is fictional test data. The assumptions, sources, prompts and tests behind this page are in the Workings Pack that came with it.`,
+  how_note: `All data here is fictional test data. The assumptions, sources, prompts and tests behind this page are in the accompanying Workings Pack. The Founder's Associate runs Good Form in this plan. That is an assumption, and depends on the CEO approving it.`,
 
   footer: `Prototype for evaluation. Built by Liv with Claude for the MAGIC AI Founder's Associate task, October 2026. Not an official MAGIC page and it does not use MAGIC's logo. Photos are free-licence stock from Pexels and Unsplash contributors.`
 };
