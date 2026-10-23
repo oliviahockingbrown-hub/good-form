@@ -482,8 +482,8 @@ html.js .rv.show{opacity:1;transform:none}
       <div class="krow r2"><span class="kt" data-dir="1">Specific. Safe. Never edited. Specific. Safe. Never edited. Specific. Safe. Never edited. </span></div>
       <div class="krow r3"><span class="kt" data-dir="-1">Callum logged every tester comment <i>·</i> Dmitri re-boxed 40 mirrors <i>·</i> Sana chased the courier <i>·</i> Olu got US setups through with no refunds <i>·</i> </span></div>
     </div>
-    <figure class="kph kp1"><img src="images/colour.jpg" alt="Colleagues taking a selfie in a bright office" loading="eager"></figure>
-    <figure class="kph kp2"><img src="images/highfive.jpg" alt="A team high-fiving around a table" loading="eager"></figure>
+    <figure class="kph kp1"><img src="colour.jpg" alt="Colleagues taking a selfie in a bright office" loading="eager"></figure>
+    <figure class="kph kp2"><img src="highfive.jpg" alt="A team high-fiving around a table" loading="eager"></figure>
     <div class="kcount" aria-label="Sample count of spots this week"><div class="kn" id="kn">0</div><div class="kl">spots in one test week<small>Week 3 of the 30-day test</small></div></div>
     <div class="kcopy">
       <p class="eyebrow" data-c="hero_eyebrow"></p>
@@ -514,15 +514,15 @@ html.js .rv.show{opacity:1;transform:none}
   <section class="band" aria-label="Real work, noticed">
     <h2>Real work, noticed!</h2>
     <div class="pgrid">
-      <figure class="pf"><img src="images/selfie.jpg" alt="Colleagues taking a team selfie" loading="lazy"><figcaption><em>Example spot</em>“…rewriting the escalation rules so courier-damage tickets go straight to ops. Refunds went from 3 days to same day.”</figcaption></figure>
-      <figure class="pf"><img src="images/celebrate.jpg" alt="A colleague celebrating at her desk" loading="lazy"><figcaption><em>Example spot</em>“Josh built the dashboard behind my plan-completion test and never asked for credit. I'd have been blind without it.”</figcaption></figure>
-      <figure class="pf"><img src="images/laugh.jpg" alt="Two colleagues laughing over printouts" loading="lazy"><figcaption><em>Example spot</em>“Callum redid the rep-counter animation twice before launch and it still didn't land, but he logged every tester comment.”</figcaption></figure>
-      <figure class="pf tall"><img src="images/pair.jpg" alt="Two colleagues laughing in a corridor" loading="lazy"><figcaption><em>Example spot</em>“You kept 12 returned mirrors labelled and in order so I could test them. It saved my week.”</figcaption></figure>
+      <figure class="pf"><img src="selfie.jpg" alt="Colleagues taking a team selfie" loading="lazy"><figcaption><em>Example spot</em>“…rewriting the escalation rules so courier-damage tickets go straight to ops. Refunds went from 3 days to same day.”</figcaption></figure>
+      <figure class="pf"><img src="celebrate.jpg" alt="A colleague celebrating at her desk" loading="lazy"><figcaption><em>Example spot</em>“Josh built the dashboard behind my plan-completion test and never asked for credit. I'd have been blind without it.”</figcaption></figure>
+      <figure class="pf"><img src="laugh.jpg" alt="Two colleagues laughing over printouts" loading="lazy"><figcaption><em>Example spot</em>“Callum redid the rep-counter animation twice before launch and it still didn't land, but he logged every tester comment.”</figcaption></figure>
+      <figure class="pf tall"><img src="pair.jpg" alt="Two colleagues laughing in a corridor" loading="lazy"><figcaption><em>Example spot</em>“You kept 12 returned mirrors labelled and in order so I could test them. It saved my week.”</figcaption></figure>
     </div>
     <p class="hint">Stock photographs. The quoted spots are examples from the fictional test team, and the people shown are not them.</p>
   </section>
   <section class="closer" aria-label="Fairness">
-    <img src="images/cheer.jpg" alt="A team cheering around a meeting table" loading="lazy">
+    <img src="cheer.jpg" alt="A team cheering around a meeting table" loading="lazy">
     <div class="closercopy"><h2>Nobody picks who gets celebrated. The rules do, and every pick is logged!</h2><p>Least featured first. One spot per team. Each spot used once!</p></div>
   </section>
 
@@ -736,7 +736,7 @@ $("routes").innerHTML = COPY.routes.map((r) => `<button class="tile route" data-
 $("valmap").innerHTML = COPY.values_map.map((r) => `<tr>${r.map((c, i) => `<td>${i === 0 ? "<b>" + esc(c) + "</b>" : esc(c)}</td>`).join("")}</tr>`).join("");
 /* rituals master-detail */
 $("mlist").innerHTML = COPY.rituals.map((r, i) => `<button role="tab" aria-selected="${i === 0}" data-i="${i}"><span class="c">${esc(r[1])}</span><span class="t">${esc(r[0])}</span></button>`).join("");
-function showRit(i) { const r = COPY.rituals[i], a = COPY.rituals_adds[i]; document.querySelectorAll("#mlist button").forEach((b) => b.setAttribute("aria-selected", b.dataset.i == i)); $("mdetail").innerHTML = `<div class="fxbig"><div class="fx-photo" style="background-image:url(images/${a[3]}.jpg)" role="img" aria-label="${esc(r[0])}"></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><h3 style="font-size:26px">${esc(r[0])}</h3>${stChip(r[3])}</div><p>${esc(r[2])}</p><div class="fx3"><div><b>When</b>${esc(a[0])}</div><div><b>Who</b>${esc(a[1])}</div><div><b>What Good Form adds</b>${esc(a[2])}</div></div></div>`; }
+function showRit(i) { const r = COPY.rituals[i], a = COPY.rituals_adds[i]; document.querySelectorAll("#mlist button").forEach((b) => b.setAttribute("aria-selected", b.dataset.i == i)); $("mdetail").innerHTML = `<div class="fxbig"><div class="fx-photo" style="background-image:url(${a[3]}.jpg)" role="img" aria-label="${esc(r[0])}"></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><h3 style="font-size:26px">${esc(r[0])}</h3>${stChip(r[3])}</div><p>${esc(r[2])}</p><div class="fx3"><div><b>When</b>${esc(a[0])}</div><div><b>Who</b>${esc(a[1])}</div><div><b>What Good Form adds</b>${esc(a[2])}</div></div></div>`; }
 $("mlist").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) showRit(+b.dataset.i); });
 showRit(0);
 
@@ -824,10 +824,10 @@ $("repcard").innerHTML = `<div><p class="eyebrow">Week 3 · Drafted by AI from t
   document.querySelectorAll(".view").forEach(v=>{
     const id=v.id.replace("v-","");if(id==="home")return;
     const h=v.querySelector(".vhead");
-    if(h&&P[id]){const f=document.createElement("figure");f.className="vph";f.innerHTML='<img src="images/'+P[id]+'.jpg" alt="" loading="lazy">';h.prepend(f);
+    if(h&&P[id]){const f=document.createElement("figure");f.className="vph";f.innerHTML='<img src="'+P[id]+'.jpg" alt="" loading="lazy">';h.prepend(f);
       h.addEventListener("mousemove",e=>{const r=h.getBoundingClientRect();h.style.setProperty("--mx",(e.clientX-r.left)+"px");h.style.setProperty("--my",(e.clientY-r.top)+"px")})}
     if(C[id]){const i=order.indexOf(id),nx=order[i+1];const d=document.createElement("section");d.className="pcloser";
-      d.innerHTML='<img src="images/'+C[id][0]+'.jpg" alt="" loading="lazy"><div class="pcopy"><h3>'+C[id][1]+'</h3>'+(nx?'<button class="pnext" data-go="'+nx+'">Next: '+VIEWS[i+1][1]+' &rarr;</button>':'<button class="pnext" data-go="home">Back to the overview &rarr;</button>')+'</div>';
+      d.innerHTML='<img src="'+C[id][0]+'.jpg" alt="" loading="lazy"><div class="pcopy"><h3>'+C[id][1]+'</h3>'+(nx?'<button class="pnext" data-go="'+nx+'">Next: '+VIEWS[i+1][1]+' &rarr;</button>':'<button class="pnext" data-go="home">Back to the overview &rarr;</button>')+'</div>';
       v.appendChild(d)}
   });
   const rvSel=".view .panel,.view .stat,.view .run,.view .tile,.view .route,.view .node,.view .day,.view .cad,.view .slackmsg,.view .repcount,.view .phone,.view .tablewrap,.view .pcloser,.view .covrow,.view .steps li";
