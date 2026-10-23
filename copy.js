@@ -157,7 +157,7 @@ const COPY = {
   ],
   notclaim_title: `What is not claimed`,
   notclaim: [
-    `The AI picks the same value as the hand key only 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the held-out spots it chose "Strong analytical judgement", so it leans that way when a spot mentions numbers. This is why it only suggests a value and the giver makes the final choice.`,
+    `The AI picks the same value as the hand key only 11 to 39% of the time (44 to 56% within its top two). In 9 of its 19 misses on the held-out spots it chose “Strong analytical judgement”, so it leans that way when a spot mentions numbers. This is why it only suggests a value and the giver makes the final choice.`,
     `Prompt v2 was tuned on the same 30 keyed spots, so those scores are flattered. The held-out 50 is the fair test.`,
     `A name-swap check with a control run changed the value tag on 9 of 30 spots when names were swapped, against 0 of 30 when the same text was run twice. Safety flags never moved. The changes went in no consistent direction, but value tagging is name-sensitive, which is why the giver confirms the value. It is a small sample, so a signal and not a verdict.`,
     `All data is fictional.`

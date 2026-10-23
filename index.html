@@ -555,7 +555,7 @@ html.js .rv.show{opacity:1;transform:none}
       <div class="phone" aria-label="Mock-up of a WhatsApp chat">
         <div class="phonebar">Good Form · WhatsApp</div>
         <div class="msg me">spot anon Olu: Stayed on a video call for 50 minutes with a customer until the mirror calibrated. She left a 5-star review and her husband signed up too.</div>
-        <div class="msg bot">Spot checked for Olu. Tagged: Customer instinct · customer · good_form. Your name stays off this one. Olu will see it as from A teammate.</div>
+        <div class="msg bot">Spot checked for Olu. Tagged: “Customer instinct” · customer · good_form. Your name stays off this one. Olu will see it as from A teammate.</div>
         <div class="msg me">spot Olu: legend</div>
         <div class="msg bot">Love the energy. What did Olu actually do, and what changed because of it?</div>
         <div class="msg me">hello there</div>
@@ -587,7 +587,7 @@ html.js .rv.show{opacity:1;transform:none}
       <div class="slackmsg" aria-label="Mock-up of the Monday Slack message">
         <div class="who">Good Form <span class="tiny">APP · Monday 9:00</span></div>
         <div class="eyebrow">This week's Focus Value</div>
-        <h3 style="font-size:22px">Customer instinct</h3>
+        <h3 style="font-size:22px">“Customer instinct”</h3>
         <p class="sub">Cares what customers actually experience and turns what they say into action.</p>
         <div class="quote" style="margin-top:6px">Freya sat with four members at home to watch how they actually set up the mirror and caught the bad-lighting issue. It now shapes our form-tip copy.</div>
         <p class="hint">A real spot from the test data. Spot someone who shows it with /spot.</p>
@@ -733,7 +733,7 @@ $("timeline").addEventListener("click", (e) => { const b = e.target.closest(".tl
 showRhythm(0);
 $("routes").innerHTML = COPY.routes.map((r) => `<button class="tile route" data-go="${r[3]}"><span class="eyebrow">${esc(r[0])}</span><span class="big">${esc(r[1])}</span><span class="sub" style="font-size:14px">${esc(r[2])}</span><span class="go2">${esc(r[4])} →</span></button>`).join("");
 
-$("valmap").innerHTML = COPY.values_map.map((r) => `<tr>${r.map((c, i) => `<td>${i === 0 ? "<b>" + esc(c) + "</b>" : esc(c)}</td>`).join("")}</tr>`).join("");
+$("valmap").innerHTML = COPY.values_map.map((r) => `<tr>${r.map((c, i) => `<td>${i === 0 ? "<b>“" + esc(c) + "”</b>" : esc(c)}</td>`).join("")}</tr>`).join("");
 /* rituals master-detail */
 $("mlist").innerHTML = COPY.rituals.map((r, i) => `<button role="tab" aria-selected="${i === 0}" data-i="${i}"><span class="c">${esc(r[1])}</span><span class="t">${esc(r[0])}</span></button>`).join("");
 function showRit(i) { const r = COPY.rituals[i], a = COPY.rituals_adds[i]; document.querySelectorAll("#mlist button").forEach((b) => b.setAttribute("aria-selected", b.dataset.i == i)); $("mdetail").innerHTML = `<div class="fxbig"><div class="fx-photo" style="background-image:url(${a[3]}.jpg)" role="img" aria-label="${esc(r[0])}"></div><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><h3 style="font-size:26px">${esc(r[0])}</h3>${stChip(r[3])}</div><p>${esc(r[2])}</p><div class="fx3"><div><b>When</b>${esc(a[0])}</div><div><b>Who</b>${esc(a[1])}</div><div><b>What Good Form adds</b>${esc(a[2])}</div></div></div>`; }
@@ -776,7 +776,7 @@ function render() {
     ${r.q ? `<div><div class="k">Follow-up question for the giver</div><div class="quote">${esc(r.q)}</div></div>` : ""}
     <div class="kv">
       <div><div class="k">Specificity</div><b>${r.s[2]} of 2</b><div class="hint">Names an action: ${r.s[0] ? "yes" : "no"}. Names an effect: ${r.s[1] ? "yes" : "no"}.</div></div>
-      <div><div class="k">Suggested value</div><b>${r.v[0] ? esc(r.v[0]) : "none"}</b>${bar(r.v[1])}<div class="hint">Confidence ${r.v[1]}${r.ru ? ". Runner-up: " + esc(r.ru) : ""}</div></div>
+      <div><div class="k">Suggested value</div><b>${r.v[0] ? "“" + esc(r.v[0]) + "”" : "none"}</b>${bar(r.v[1])}<div class="hint">Confidence ${r.v[1]}${r.ru ? ". Runner-up: “" + esc(r.ru) + "”" : ""}</div></div>
       <div><div class="k">Type</div><b>${r.t[0] ? esc(r.t[0].replace("_", " ")) : "none"}</b>${bar(r.t[1])}</div>
       <div><div class="k">Outcome</div><b>${r.o[0] ? esc(r.o[0]) : "none"}</b>${bar(r.o[1])}</div>
     </div>
@@ -797,7 +797,7 @@ const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 $("repcard").innerHTML = `<div><p class="eyebrow">Week 3 · Drafted by AI from test spots</p><h3>Your team's Rep Count</h3></div>
   <p style="font-size:15px">Another week of showing up and putting in the work, and your teammates took a moment to notice. Here's the team shout-out card, so give this a good read and a little cheer!</p>` +
   REP.map((r) => `<div class="rc-spot"><span class="who">${r[3] ? "A teammate" : esc(cap(r[0]))} spotted ${esc(cap(r[1]))}${r[3] ? " (sent anonymously)" : ""}</span><p>${esc(r[2])}</p></div>`).join("") +
-  `<div class="strip"><b>Focus Value this week:</b> Customer instinct. Thanks to everyone who gave a spot!</div>`;
+  `<div class="strip"><b>Focus Value this week:</b> “Customer instinct”. Thanks to everyone who gave a spot!</div>`;
 
 
 
