@@ -86,7 +86,7 @@ const COPY = {
     [`Day 22`, `If nothing has arrived, a reminder comes with a prompt for work that is easy to miss: who depends on this person's unseen work?`],
     [`Day 29`, `The Founder's Associate (assumption) has a short conversation with the manager, not the person. Is something getting in the way of recognition reaching them, such as being new, remote or working behind the scenes? The counts go into the monthly review.`]
   ],
-  nudge_status: `Nudge text Built, sending Designed`,
+  nudge_status: `Built, sent in Slack to a test user`,
 
   /* ---------- Monday Two tab ---------- */
   monday_title: `Varun's Monday Two`,
@@ -193,11 +193,12 @@ const COPY = {
     [`Spot in WhatsApp`, `Built`, `Inbound tested from a real phone. Replies need a paid account`],
     [`Form Check`, `Built`, `Specificity, value, type, safety flags`],
     [`Rep Count draft`, `Built`, `AI writes the intro only. The praise is pasted in by code`],
+    [`Rep Count draft sent to Slack`, `Built`, `Built 23 October. A test link picks up to five spots by the Monday Two rules, skips any spot already used, and sends one Slack draft with a Why chosen line under each pick. Fictional spots only. Not joined up yet: the AI intro, the ledger write on approval and the post itself`],
     [`Varied Rep Count intro`, `Built`, `Drafted fresh each week. The prompt is shown the last six intros and told to avoid them. Tested over two runs`],
     [`Rep Count selection rules`, `Built`, `Fair rotation and spread, tested over four simulated weeks with zero rule breaks`],
     [`Coverage check`, `Built`, `Plain counting, no AI`],
     [`Cross-team check`, `Built`, `Tested with invented spots below the 30% floor. The Thursday wording switched to ask for cross-team spots`],
-    [`Manager nudge`, `Built`, `Text built. Sending and the follow-up steps are designed`],
+    [`Manager nudge`, `Built`, `Sent every Thursday as a private Slack message to a test user, naming anyone with no spot for 14 days. The day-22 reminder and the day-29 conversation are designed`],
     [`Thursday reminder to people who have not spotted yet`, `Built`, `Tested live in Slack, with a button that shows how to spot`],
     [`Monday Two message`, `Built`, `Sent to a test user in Slack, with a reply button that logs the reply`],
     [`Monthly report to Varun`, `Built`, `Who he acknowledged and who has not been featured. Dry run on fictional data`],
